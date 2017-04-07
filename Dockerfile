@@ -5,7 +5,7 @@ MAINTAINER Tony Motakis <tvelocity@gmail.com>
 ENV ETHERPAD_VERSION 1.6.1
 
 RUN apt-get update && \
-    apt-get install -y curl unzip nodejs npm mysql-client gzip git python libssl-dev pkg-config build-essential & \
+    apt-get install -y curl unzip nodejs npm mysql-client gzip git python libssl-dev pkg-config build-essential && \
     rm -r /var/lib/apt/lists/*
 
 WORKDIR /opt/
